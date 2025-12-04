@@ -20,7 +20,7 @@ export default function Navbar(props) {
           </ul>
 
           <div className={`form-check form-check-inline text-${props.mode === 'light' ? 'dark' : 'light'} mx-3`}>
-            <input className="form-check-input" onClick={() => props.toggleMode("light")} type="radio" name="radioDefault" id="ligthMode" checked={props.mode === "light"}/>
+            <input className="form-check-input" onClick={() => props.toggleMode("light")} type="radio" name="radioDefault" id="ligthMode" defaultChecked={props.mode === "light"}/>
             <label className="form-check-label" htmlFor="ligthMode">
               LightMode
             </label>
